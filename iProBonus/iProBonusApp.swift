@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct iProBonusApp: App {
+    
+    @ObservedObject var userStore: UserStore = .init()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView(viewModel: BonusViewModel(userStore: userStore))
+                .environmentObject(userStore)
         }
     }
+    
 }

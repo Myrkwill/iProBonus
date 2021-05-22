@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IProBonusAPI",
+        "repositoryURL": "https://github.com/Myrkwill/IProBonusAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "c28115840dea6831bcb474774ad82c64c6afdb96",
+          "version": "0.0.1"
+        }
+      },
+      {
+        "package": "IProBonusViews",
+        "repositoryURL": "https://github.com/Myrkwill/IProBonusViews.git",
+        "state": {
+          "branch": null,
+          "revision": "14f445fb99676504710577b75d81c8f86b1fcb0b",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

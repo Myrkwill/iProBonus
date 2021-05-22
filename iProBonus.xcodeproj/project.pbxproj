@@ -3,16 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A5062AA8265592C9008F33FE /* iProBonusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062AA7265592C9008F33FE /* iProBonusApp.swift */; };
-		A5062AAA265592C9008F33FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062AA9265592C9008F33FE /* ContentView.swift */; };
 		A5062AAC265592CC008F33FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5062AAB265592CC008F33FE /* Assets.xcassets */; };
 		A5062AAF265592CC008F33FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5062AAE265592CC008F33FE /* Preview Assets.xcassets */; };
-		A5062ABA265592CC008F33FE /* iProBonusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062AB9265592CC008F33FE /* iProBonusTests.swift */; };
-		A5062AC5265592CC008F33FE /* iProBonusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062AC4265592CC008F33FE /* iProBonusUITests.swift */; };
+		A5062B002657EEE1008F33FE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062AFF2657EEE1008F33FE /* MainView.swift */; };
+		A5062B0726580715008F33FE /* BonusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B0626580715008F33FE /* BonusViewModel.swift */; };
+		A5062B09265808F1008F33FE /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B08265808F1008F33FE /* SettingsViewModel.swift */; };
+		A5062B0D26580CF8008F33FE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B0C26580CF8008F33FE /* SettingsView.swift */; };
+		A5062B0F265834E0008F33FE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B0E265834E0008F33FE /* Storage.swift */; };
+		A5062B1126583539008F33FE /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B1026583538008F33FE /* UserStore.swift */; };
+		A5062B1D26593D85008F33FE /* Color+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B1C26593D85008F33FE /* Color+Codable.swift */; };
+		A5062B2026594053008F33FE /* CGFloat+clean.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5062B1F26594053008F33FE /* CGFloat+clean.swift */; };
+		A5062B232659519A008F33FE /* IProBonusAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A5062B222659519A008F33FE /* IProBonusAPI */; };
+		A5062B26265951AA008F33FE /* IProBonusViews in Frameworks */ = {isa = PBXBuildFile; productRef = A5062B25265951AA008F33FE /* IProBonusViews */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +42,19 @@
 /* Begin PBXFileReference section */
 		A5062AA4265592C9008F33FE /* iProBonus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iProBonus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5062AA7265592C9008F33FE /* iProBonusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProBonusApp.swift; sourceTree = "<group>"; };
-		A5062AA9265592C9008F33FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5062AAB265592CC008F33FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5062AAE265592CC008F33FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5062AB0265592CC008F33FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5062AB5265592CC008F33FE /* iProBonusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iProBonusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5062AB9265592CC008F33FE /* iProBonusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProBonusTests.swift; sourceTree = "<group>"; };
-		A5062ABB265592CC008F33FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5062AC0265592CC008F33FE /* iProBonusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iProBonusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5062AC4265592CC008F33FE /* iProBonusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iProBonusUITests.swift; sourceTree = "<group>"; };
-		A5062AC6265592CC008F33FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5062AFF2657EEE1008F33FE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A5062B0626580715008F33FE /* BonusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusViewModel.swift; sourceTree = "<group>"; };
+		A5062B08265808F1008F33FE /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A5062B0C26580CF8008F33FE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A5062B0E265834E0008F33FE /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A5062B1026583538008F33FE /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		A5062B1C26593D85008F33FE /* Color+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Codable.swift"; sourceTree = "<group>"; };
+		A5062B1F26594053008F33FE /* CGFloat+clean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+clean.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5062B232659519A008F33FE /* IProBonusAPI in Frameworks */,
+				A5062B26265951AA008F33FE /* IProBonusViews in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				A5062AA6265592C9008F33FE /* iProBonus */,
-				A5062AB8265592CC008F33FE /* iProBonusTests */,
-				A5062AC3265592CC008F33FE /* iProBonusUITests */,
 				A5062AA5265592C9008F33FE /* Products */,
+				A5062B012657EF25008F33FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +106,11 @@
 		A5062AA6265592C9008F33FE /* iProBonus */ = {
 			isa = PBXGroup;
 			children = (
+				A5062B1E26593DD8008F33FE /* Supporting */,
+				A5062B1B26593D6F008F33FE /* Extension */,
+				A5062B1A265934AE008F33FE /* SettingsView */,
+				A5062B192659349A008F33FE /* BonusView */,
 				A5062AA7265592C9008F33FE /* iProBonusApp.swift */,
-				A5062AA9265592C9008F33FE /* ContentView.swift */,
 				A5062AAB265592CC008F33FE /* Assets.xcassets */,
 				A5062AB0265592CC008F33FE /* Info.plist */,
 				A5062AAD265592CC008F33FE /* Preview Content */,
@@ -112,22 +126,47 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A5062AB8265592CC008F33FE /* iProBonusTests */ = {
+		A5062B012657EF25008F33FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5062AB9265592CC008F33FE /* iProBonusTests.swift */,
-				A5062ABB265592CC008F33FE /* Info.plist */,
 			);
-			path = iProBonusTests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A5062AC3265592CC008F33FE /* iProBonusUITests */ = {
+		A5062B192659349A008F33FE /* BonusView */ = {
 			isa = PBXGroup;
 			children = (
-				A5062AC4265592CC008F33FE /* iProBonusUITests.swift */,
-				A5062AC6265592CC008F33FE /* Info.plist */,
+				A5062B0626580715008F33FE /* BonusViewModel.swift */,
+				A5062AFF2657EEE1008F33FE /* MainView.swift */,
 			);
-			path = iProBonusUITests;
+			path = BonusView;
+			sourceTree = "<group>";
+		};
+		A5062B1A265934AE008F33FE /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A5062B0C26580CF8008F33FE /* SettingsView.swift */,
+				A5062B08265808F1008F33FE /* SettingsViewModel.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		A5062B1B26593D6F008F33FE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A5062B1C26593D85008F33FE /* Color+Codable.swift */,
+				A5062B1F26594053008F33FE /* CGFloat+clean.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A5062B1E26593DD8008F33FE /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A5062B0E265834E0008F33FE /* Storage.swift */,
+				A5062B1026583538008F33FE /* UserStore.swift */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +185,10 @@
 			dependencies = (
 			);
 			name = iProBonus;
+			packageProductDependencies = (
+				A5062B222659519A008F33FE /* IProBonusAPI */,
+				A5062B25265951AA008F33FE /* IProBonusViews */,
+			);
 			productName = iProBonus;
 			productReference = A5062AA4265592C9008F33FE /* iProBonus.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +260,10 @@
 				Base,
 			);
 			mainGroup = A5062A9B265592C9008F33FE;
+			packageReferences = (
+				A5062B2126595199008F33FE /* XCRemoteSwiftPackageReference "IProBonusAPI" */,
+				A5062B24265951AA008F33FE /* XCRemoteSwiftPackageReference "IProBonusViews" */,
+			);
 			productRefGroup = A5062AA5265592C9008F33FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +306,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5062AAA265592C9008F33FE /* ContentView.swift in Sources */,
+				A5062B0726580715008F33FE /* BonusViewModel.swift in Sources */,
+				A5062B002657EEE1008F33FE /* MainView.swift in Sources */,
+				A5062B09265808F1008F33FE /* SettingsViewModel.swift in Sources */,
+				A5062B0F265834E0008F33FE /* Storage.swift in Sources */,
+				A5062B1126583539008F33FE /* UserStore.swift in Sources */,
+				A5062B0D26580CF8008F33FE /* SettingsView.swift in Sources */,
+				A5062B1D26593D85008F33FE /* Color+Codable.swift in Sources */,
 				A5062AA8265592C9008F33FE /* iProBonusApp.swift in Sources */,
+				A5062B2026594053008F33FE /* CGFloat+clean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5062ABA265592CC008F33FE /* iProBonusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5062AC5265592CC008F33FE /* iProBonusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +632,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5062B2126595199008F33FE /* XCRemoteSwiftPackageReference "IProBonusAPI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Myrkwill/IProBonusAPI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		A5062B24265951AA008F33FE /* XCRemoteSwiftPackageReference "IProBonusViews" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Myrkwill/IProBonusViews.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5062B222659519A008F33FE /* IProBonusAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5062B2126595199008F33FE /* XCRemoteSwiftPackageReference "IProBonusAPI" */;
+			productName = IProBonusAPI;
+		};
+		A5062B25265951AA008F33FE /* IProBonusViews */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5062B24265951AA008F33FE /* XCRemoteSwiftPackageReference "IProBonusViews" */;
+			productName = IProBonusViews;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5062A9C265592C9008F33FE /* Project object */;
 }
