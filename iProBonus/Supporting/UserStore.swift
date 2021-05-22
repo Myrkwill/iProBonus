@@ -18,8 +18,12 @@ class UserStore: ObservableObject {
     @Storage("descriptionSize", default: CGFloat(12)) var descriptionSize {
         didSet { objectWillChange.send() }
     }
+
+    @Storage("mainColor", default: Color.strawberryRed) var mainColor {
+        didSet { objectWillChange.send() }
+    }
     
-    @Storage("backgroundColor", default: Color.red) var backgroundColor {
+    @Storage("secondaryColor", default: Color.deepYellowPink) var secondaryColor {
         didSet { objectWillChange.send() }
     }
     

@@ -15,10 +15,10 @@ struct MainView: View {
         NavigationView {
             GeometryReader { geometry in
                 VStack(spacing: 0) {
-                    LogoNavigationView(logo: "логотип", buttonColor: .strawberryRed, onInfoPressed: { self.showSettingsView = true })
+                    LogoNavigationView(logo: "логотип", buttonColor: viewModel.mainColor, onInfoPressed: { self.showSettingsView = true })
                     
                     ZStack(alignment: .top) {
-                        LinearGradientView(colors: [.strawberryRed, .deepYellowPink])
+                        LinearGradientView(colors: [viewModel.mainColor, viewModel.secondaryColor])
                             .frame(height: geometry.size.height / 7)
                             .offset(y: geometry.size.height / 7 * 0.5)
                         
@@ -27,7 +27,7 @@ struct MainView: View {
                             numberOfBonusesForBurning: viewModel.numberOfBonusesForBurning,
                             nameOfBonus: viewModel.nameOfBonus,
                             dateBurning: viewModel.dateBurning,
-                            backgroundColor: viewModel.backgroundColor,
+                            buttonColor: viewModel.mainColor,
                             titleSize: viewModel.titleSize,
                             descriptionSize: viewModel.descriptionSize
                         )

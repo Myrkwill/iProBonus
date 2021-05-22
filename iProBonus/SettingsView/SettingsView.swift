@@ -10,22 +10,29 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             VStack {
-
-                Text("Client ID")
-                TextField("Client ID", text: $userStore.clientID)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
+                            
+                Section(header: Text("Client ID")) {
+                    TextField("Client ID", text: $userStore.clientID)
+                        .padding()
+                        .background(lightGreyColor)
+                        .cornerRadius(5.0)
+                }
                 
-                Text("Device ID")
-                TextField("Device ID", text: $userStore.deviceID)
-                    .padding()
-                    .background(lightGreyColor)
-                    .cornerRadius(5.0)
+                Section(header: Text("Device ID")) {
+                    TextField("Device ID", text: $userStore.deviceID)
+                        .padding()
+                        .background(lightGreyColor)
+                        .cornerRadius(5.0)
+                }
                 
-                Stepper("Title size: \(userStore.titleSize.clean)", value: $userStore.titleSize, in: 0...50)
-                Stepper("Description size: \(userStore.descriptionSize.clean)", value: $userStore.descriptionSize, in: 0...50)
-                ColorPicker("Background color", selection: $userStore.backgroundColor)
+                Section {
+                    Stepper("Title size: \(userStore.titleSize.clean)", value: $userStore.titleSize, in: 0...50)
+                    Stepper("Description size: \(userStore.descriptionSize.clean)", value: $userStore.descriptionSize, in: 0...50)
+                }
+                Section {
+                    ColorPicker("Main color", selection: $userStore.mainColor)
+                    ColorPicker("Secondary color", selection: $userStore.secondaryColor)
+                }
                 
                 Spacer()
                 

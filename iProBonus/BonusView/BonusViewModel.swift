@@ -9,7 +9,8 @@ final class BonusViewModel: ObservableObject {
     @Published var numberOfBonusesForBurning: Int = 0
     @Published var nameOfBonus: String = ""
     @Published var dateBurning: Date = Date()
-    @Published var backgroundColor: Color = Color.strawberryRed
+    @Published var mainColor: Color = Color.strawberryRed
+    @Published var secondaryColor: Color = Color.deepYellowPink
     @Published var titleSize: CGFloat = 24
     @Published var descriptionSize: CGFloat = 12
     
@@ -18,9 +19,10 @@ final class BonusViewModel: ObservableObject {
     
     init(userStore: UserStore) {
         print(userStore.description)
-        self.backgroundColor = userStore.backgroundColor
-        self.titleSize = userStore.titleSize
-        self.descriptionSize = userStore.descriptionSize
+        mainColor = userStore.mainColor
+        secondaryColor = userStore.secondaryColor
+        titleSize = userStore.titleSize
+        descriptionSize = userStore.descriptionSize
             
         let tokenRequest = TokenRequest(idClient: userStore.clientID, paramValue: userStore.deviceID)
         
